@@ -3,75 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Hobbies</title>
+    <title>Welcome to My Cafe</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #ffebee; /* Light pink background */
+            color: #343a40; /* Darker text for better contrast */
+        }
+        h1, h2, h3 {
+            color: #d81b60; /* Dark pink for headings */
+        }
         img {
             max-width: 100%;
             height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px; /* Rounded corners for images */
+        }
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+        }
+        li {
+            background-color: #fff; /* White background for list items */
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px; /* Rounded corners for list items */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #d81b60; /* Dark pink for table headers */
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa; /* Light gray for even rows */
+        }
+        hr {
+            margin: 20px 0;
+            border: 1px solid #d81b60; /* Match the color of the headings */
+        }
+        a {
+            color: #d81b60; /* Dark pink for links */
+            text-decoration: none; /* Remove underline */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Hobbies Page</h1>
-    <h2>About Me</h2>
-    <p>Hello! I'm Smridhi, and I'm excited to share my hobbies with you!</p>
+    <h1>Welcome to My Cafe!</h1>
+    <h2>About Us</h2>
+    <p>Hello! I'm Smridhi, and I'm excited to share my new cafe with you! We offer a cozy atmosphere and a variety of delicious treats.</p>
     
-    <h3>My Hobbies</h3>
+    <h3>Our Specialties</h3>
     <ul>
-        <li>Fishing</li>
-        <li>Windsurfing</li>
-        <li>Playing Volleyball</li>
+        <li>Freshly Brewed Coffee</li>
+        <li>Homemade Pastries</li>
+        <li>Gourmet Sandwiches</li>
     </ul>
 
     <hr>
 
     <h2>Favorite Quotes</h2>
     <blockquote>
-        "The most difficult thing is the decision to act, the rest is merely tenacity." - Amelia Earhart
+        "Life is like coffee; it’s all in how you make it." - Unknown
     </blockquote>
 
-    <h2>My Profile</h2>
-    <center>
-        <img src="YOUR_PROFILE_PICTURE_URL.jpg" alt="Smridhi Uppala" />
-    </center>
-    
-    <h2>My Recent Activities</h2>
+    <h2>Our Menu</h2>
     <table border="1">
         <tr>
-            <th>Name</th>
-            <th>Hobby</th>
-            <th>Last Time I Did This</th>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Price</th>
         </tr>
         <tr>
-            <td>Sailing</td>
-            <td>Windsurfing</td>
-            <td>Last weekend</td>
+            <td>Espresso</td>
+            <td>Rich and bold coffee served in a small cup.</td>
+            <td>$3.00</td>
         </tr>
         <tr>
-            <td>Beach Cleanup</td>
-            <td>Fishing</td>
-            <td>Two weeks ago</td>
+            <td>Croissant</td>
+            <td>Flaky pastry, perfect for breakfast.</td>
+            <td>$2.50</td>
         </tr>
         <tr>
-            <td>Beach Volleyball</td>
-            <td>Playing Volleyball</td>
-            <td>Yesterday</td>
+            <td>Turkey Sandwich</td>
+            <td>Fresh turkey with lettuce and tomato on artisan bread.</td>
+            <td>$5.50</td>
         </tr>
     </table>
 
-    <h2>Get Involved!</h2>
-    <p>If you're interested in joining any of these activities, please visit my favorite resources:</p>
-    <a href="https://www.volleyball.com" target="_blank">Volleyball Association</a>
+    <h2>Visit Us!</h2>
+    <p>If you're in the area, stop by and enjoy a cup of coffee and a snack. We’d love to see you!</p>
+    <p>Address: 123 Cafe Lane, Your City, Your State</p>
     
     <h2>Feedback</h2>
-    <p>I'd love to hear your thoughts! Please select an option:</p>
-    <select>
+    <p>We’d love to hear your thoughts! Please select an option:</p>
+    <label for="feedback">Select your feedback:</label>
+    <select id="feedback">
         <option value="great">Great!</option>
         <option value="okay">Okay</option>
         <option value="needImprovement">Needs Improvement</option>
     </select>
     
     <br>
-    <p>Thank you for visiting my page!</p>
+    <p>Thank you for visiting our cafe's page!</p>
 </body>
 </html>
